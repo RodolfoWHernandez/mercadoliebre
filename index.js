@@ -26,8 +26,7 @@ app.get('/login', (req, res) =>{
 })
 
 app.post('/registro', (req, res) => {
-
-    res.redirect('/')
+     res.redirect('/')
     })
 
 

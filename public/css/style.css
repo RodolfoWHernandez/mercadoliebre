@@ -1,0 +1,311 @@
+/*Elementos*/
+
+body {
+    background-color: #e4e4e4;
+    font-family: Roboto;
+    margin: 0;
+}
+
+header {
+    background-color: yellow;
+    padding-bottom: 30px;
+    contain: content;
+}
+
+header h3 {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+    color: blue;
+    margin: 0px 10px 0px 10px;
+    padding-left: 0px;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    color: #555;
+    padding: 40px;
+}
+
+footer div{
+    padding: 10px;
+    
+}
+
+footer i{
+    color: blue;
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+main article
+{
+    background-color: white;
+    min-width: min-content;
+    contain: content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 0;
+    box-shadow: 0px 0px 0px white;
+    transition: box-shadow 0.5s;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+
+article > div{
+ display: flex;
+}
+
+article img{
+    width: 100%;
+}
+
+
+/*Clases*/
+
+.mainregistro{
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulares{ 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.descripciones{
+    font-size:16px;
+    margin: 5px;
+
+}
+main .descripciones{
+    display: none;
+    transition: display 0,5s;
+
+}
+article:hover .descripciones{
+     display: block;
+ }
+
+
+
+.descuentos {
+    font-size:16px;
+    color: rgb(60, 185, 60);
+    margin: 5px;
+    width: 70%;
+}
+
+.precio{ 
+    font-size: 18px;
+    margin: 5px;
+    width: 30%;
+}
+
+.burger-menu{
+    font-size: 2em;
+    background-color: #1259c3;
+    color:white;
+    margin: auto;
+    width: 30px;
+    padding: 10px;
+    border-radius: 15%
+}
+
+
+
+.iconos{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pie{
+    font-size: 12px;
+    text-align: left;
+}
+
+.camion{
+    color: rgb(60, 185, 60);
+    border: 1px solid rgb(60, 185, 60);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.camion:hover{
+  transform: rotate(-90deg);
+}
+
+.site{
+    font-size: 16px;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+}
+
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boton{
+    background-color: e4e4e4;
+    transition: background-color 0.5s;
+}
+
+.boton:hover{
+    background-color: #0022AA;
+
+}
+
+.boton{
+    width: 51vw;
+    color: white;
+   background-color: blue;
+   border-radius: 5px;
+   height: 4vh;
+}
+
+.formulario{
+    width: 50vw;
+    height: 3vh;
+}
+ .login1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+/*mobile*/
+@media only screen and (max-width: 360px) {
+   .descripciones{
+        display: none;
+   }
+   
+.columna, .columna2{
+    display: none;
+}
+
+
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo {
+    width: 50%;
+}
+
+.barra{
+    width: 50%;
+    position: relative;
+}
+
+.lupa{
+    position: absolute;
+}
+
+}
+
+
+/*Tablet*/
+@media only screen and (min-width: 361px) {
+
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    
+    main article{
+        width: 40%;
+    }
+
+    .menu{
+        display: flex;
+    flex-direction: row;
+    }
+
+    .site {
+    display: flex;
+    flex-direction: row;
+    }
+
+
+
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .logo {
+        width: 30%;
+    }
+
+    .barra{
+        width: 40%;
+    }
+
+    .lupa{
+        position: absolute;
+    }
+     
+    header div h3{
+        width: 33%;
+    }
+    
+
+}
+/*Deskopt*/
+@media only screen and (min-width: 769px) {
+    
+    main article{
+        width: 20%;
+    }
+
+   section {
+    display: flex;
+    flex-direction: row;
+   }
+
+   footer i{
+       color: blue;
+       transition: color 0.5s;
+   }
+
+   footer i:hover{
+       color: yellow;
+}
+}

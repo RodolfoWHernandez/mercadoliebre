@@ -8,7 +8,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded());
 
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Levanto el server 4000');
 }) 
 
@@ -31,5 +31,3 @@ app.post('/registro', (req, res) => {
     })
 
 
-
-console.log('iniciado');
